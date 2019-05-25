@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#713684</color>
+    <color name="colorPrimaryDark">#713684</color>
+    <color name="colorAccent">#FFE900</color>
+
+    <!-- Custom Colors -->
+    <color name="colorLightBlue">#9CF3FF</color>
+    <color name="colorRedLight">#FF6A45</color>
+    <color name="colorRedDark">#CA572E</color>
+    <color name="transparentBlack">#aa000000</color>
+    <color name="pureWhite">#fff</color>
+    <color name="pureBlack">#000</color>
+    <color name="colorDefaultBackgroundGray">#ebebeb</color>
+    <color name="colorDefaultWhite">#ffffff</color>
+    <color name="colorPositiveGreen">#2ECC71</color>
+    <color name="colorNegativeRed">#FF5733</color>
+    <color name="colorWarningYellow">#ffff00</color>
+
+</resources>

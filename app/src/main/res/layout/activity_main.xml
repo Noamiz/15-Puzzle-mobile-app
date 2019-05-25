@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip">
+
+        <!-- Section 1 -->
+        <LinearLayout
+            android:id="@+id/sect_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect_fill_1_small_red"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txtTypeBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+
+                android:text="@string/init_board_intro" />
+
+            <EditText
+                android:id="@+id/edittxtBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="4dp"
+                android:inputType="textMultiLine"
+                android:text="@string/example_board"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+        </LinearLayout>
+
+        <!-- Section 2 -->
+        <LinearLayout
+            android:id="@+id/sect_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect_fill_2_small_red"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txtCosts"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_costs_intro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCostHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cost_0_5" />
+
+                <EditText
+                    android:id="@+id/edittxtHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/rect_stroke_accent"
+                    android:inputType="text|textPersonName"
+                    android:text="@string/_1_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cost_2" />
+
+                <EditText
+                    android:id="@+id/edittxtCost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/rect_stroke_accent"
+                    android:inputType="text|textPersonName"
+                    android:text="@string/_3_4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section 3 -->
+        <LinearLayout
+            android:id="@+id/sect_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect_fill_3_small_red"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:padding="4dp">
+
+            <RadioGroup
+                android:id="@+id/hChooser"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtChooseAlg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3. Choose the heuristic:" />
+
+                <RadioButton
+                    android:id="@+id/Manhattan"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Manhattan" />
+
+                <RadioButton
+                    android:id="@+id/Eucledean"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Eucledean" />
+
+                <RadioButton
+                    android:id="@+id/Octile"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Octile" />
+
+                <RadioButton
+                    android:id="@+id/Chebyshev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chebyshev" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Section 4 -->
+        <LinearLayout
+            android:id="@+id/sect_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect_fill_4_small_red"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txtChooseAlg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/_3_choose_the_algorithm_to_use" />
+
+            <TextView
+                android:id="@+id/txtHeurtistic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/heuristic_desc" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAlgs"
+                android:layout_width="match_parent"
+                android:layout_height="488dp"
+                android:checkedButton="@+id/radBfs"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radBfs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bfs" />
+
+                <RadioButton
+                    android:id="@+id/radioDfid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dfid" />
+
+                <RadioButton
+                    android:id="@+id/radioAstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/a_star" />
+
+                <RadioButton
+                    android:id="@+id/radioIdaStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ida_star" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dfbnb" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dfs" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dijkstra" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/greedy" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dfsr" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gdsmastar" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/twastar" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/astar_ncl" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bfs_ncl" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dfs_ncl" />
+
+                <RadioButton
+                    android:id="@+id/radioDfbnb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dijkstra_ncl" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- RUN Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRun"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="runBtnClick"
+                android:textColor="#fff"
+                android:background="@drawable/button_default"
+                android:text="@string/run" />
+        </LinearLayout>
+
+        <!-- Section 5 -->
+        <LinearLayout
+            android:id="@+id/sect_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect_fill_white_small_red"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txtOutput"
+                android:layout_margin="4dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="@string/output" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/edittxtOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_stroke_default"
+                android:ems="10"
+                android:inputType="none"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView >
