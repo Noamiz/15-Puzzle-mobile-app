@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Puzzle Solver</string>
+    <string name="run">Run</string>
+    <string name="output">Output</string>
+    <string name="dfbnb">DFBnB</string>
+    <string name="ida_star">IDA Star</string>
+    <string name="a_star">A Star</string>
+    <string name="dfid">DFID</string>
+    <string name="dfs">DFS</string>
+    <string name="gdsmastar">GDSMASTAR</string>
+    <string name="twastar">TWASTAR </string>
+
+    <string name="astar_ncl">ASTAR_NCL </string>
+    <string name="bfs_ncl">BFS_NCL </string>
+    <string name="dfs_ncl">DFS_NCL </string>
+    <string name="dijkstra_ncl">Dijkstra_NCL </string>
+
+    <string name="dijkstra">Dijkstra</string>
+    <string name="greedy">Greedy</string>
+    <string name="dfsr">DFS_RECURSIVE</string>
+    <string name="heuristic_desc">(using manhattan distance with respect to the different costs as the heuristic function)</string>
+    <string name="_3_4">3,4</string>
+    <string name="cost_2">Cost 2:</string>
+    <string name="_1_2">1,2</string>
+    <string name="choose_costs_intro">2. Choose which blocks cost 0.5 to move and which cost 2 to move. Others will cost 1 to move (you can leave the inputs blank):</string>
+    <string name="example_board">1,2,3\n4,5,_\n7,8,6</string>
+    <string name="init_board_intro">1. Type the initial board configuration (_ = the empty block):</string>
+    <string name="cost_0_5">Cost 0.5:</string>
+    <string name="_3_choose_the_algorithm_to_use">4. Choose the algorithm to use:</string>
+    <string name="bfs">BFS</string>
+    <string name="github_repository"><a href="https://github.com/theprofi/SmartSlidingPuzzleSolver">GitHub repository</a></string>
+    <string name="solving">Solving...</string>
+</resources>
